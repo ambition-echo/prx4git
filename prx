@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ $1 == "git" ]
+then
+	proxychains -f /home/hgy/.config/proxychains/proxychains_git.conf $*
+else
+	proxychains $*
+fi
